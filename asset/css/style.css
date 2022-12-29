@@ -3,8 +3,26 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
+/*css3 design scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(107, 107, 107);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(4, 134, 190);
+  border-radius: 5px;
+}
+
 #Navbar {
   background-color: rgb(4, 134, 190);
+}
+
+body {
+  overflow-x: hidden;
 }
 
 #Navbar .navbar-brand {
@@ -21,4 +39,34 @@ body {
 #Navbar .nav-link:hover {
   color: rgb(201, 198, 198);
   transition: 0.3s;
+}
+
+#home {
+  margin-top: 60px;
+}
+
+#about:nth-child(2) img {
+  border-radius: 4%;
+}
+#pref:nth-child(3) img {
+  border-radius: 4%;
+}
+
+.card p {
+  font-size: 12px;
+}
+
+@media (max-width: 960px) {
+  #about {
+    margin-top: 500px;
+  }
+  #home {
+    height: fit-content;
+  }
+}
+
+@media (max-width: 540px) {
+  .font {
+    font-size: 14px;
+  }
 }
